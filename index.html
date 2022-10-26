@@ -25,12 +25,12 @@
 			const App = {
 				data() {
 					return {
-						contentpc: "暂无数据"
+						contentpc: ""
 					}
 				},
 				mounted() {
 					axios
-						.get('https://io.oainin.com/index_content.php')
+						.get('http://remote.oainin.com:28081/')
 						.then(response => (this.contentpc = "<div>" + response.data + "</div>"))
 						.catch(function(error) { // 请求失败处理
 							console.log(error);
