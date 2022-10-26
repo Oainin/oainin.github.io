@@ -30,7 +30,7 @@
 				},
 				mounted() {
 					axios
-						.get('http://remote.oainin.com:28081/')
+						.get('https://remote.oainin.com:7005/')
 						.then(response => (this.contentpc = "<div>" + response.data + "</div>"))
 						.catch(function(error) { // 请求失败处理
 							console.log(error);
